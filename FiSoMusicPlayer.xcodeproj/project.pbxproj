@@ -24,6 +24,13 @@
 		B0B06B2C17DC7CBB00FF8B47 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B06B2B17DC7CBB00FF8B47 /* AVFoundation.framework */; };
 		B0B06B2F17DC868500FF8B47 /* FSMediaItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B06B2E17DC868500FF8B47 /* FSMediaItemCell.m */; };
 		B0B06B3117DC869D00FF8B47 /* FSMediaItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B06B3017DC869D00FF8B47 /* FSMediaItemCell.xib */; };
+		B0DD641818FAA5B600F041FA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DD641718FAA5B600F041FA /* iAd.framework */; };
+		B0DD641C18FAB15E00F041FA /* music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD641A18FAB15E00F041FA /* music@2x.png */; };
+		B0DD641D18FAB15E00F041FA /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD641B18FAB15E00F041FA /* settings@2x.png */; };
+		B0DD642218FAB9CC00F041FA /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD641E18FAB9CC00F041FA /* next@2x.png */; };
+		B0DD642318FAB9CC00F041FA /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD641F18FAB9CC00F041FA /* play@2x.png */; };
+		B0DD642418FAB9CC00F041FA /* previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD642018FAB9CC00F041FA /* previous@2x.png */; };
+		B0DD642518FAB9CC00F041FA /* stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DD642118FAB9CC00F041FA /* stop@2x.png */; };
 		FBDDCA27341B41658E8BCCE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EA90E38AC445968297FC60 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +61,13 @@
 		B0B06B2D17DC868500FF8B47 /* FSMediaItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMediaItemCell.h; sourceTree = "<group>"; };
 		B0B06B2E17DC868500FF8B47 /* FSMediaItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMediaItemCell.m; sourceTree = "<group>"; };
 		B0B06B3017DC869D00FF8B47 /* FSMediaItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSMediaItemCell.xib; sourceTree = "<group>"; };
+		B0DD641718FAA5B600F041FA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B0DD641A18FAB15E00F041FA /* music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music@2x.png"; sourceTree = "<group>"; };
+		B0DD641B18FAB15E00F041FA /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		B0DD641E18FAB9CC00F041FA /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
+		B0DD641F18FAB9CC00F041FA /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		B0DD642018FAB9CC00F041FA /* previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous@2x.png"; sourceTree = "<group>"; };
+		B0DD642118FAB9CC00F041FA /* stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DD641818FAA5B600F041FA /* iAd.framework in Frameworks */,
 				B0B06B2C17DC7CBB00FF8B47 /* AVFoundation.framework in Frameworks */,
 				B0ADC50A17D1A0DE001390D4 /* MediaPlayer.framework in Frameworks */,
 				B0ADC4E017D19701001390D4 /* UIKit.framework in Frameworks */,
@@ -94,6 +109,7 @@
 		B0ADC4DE17D19701001390D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0DD641718FAA5B600F041FA /* iAd.framework */,
 				B0B06B2B17DC7CBB00FF8B47 /* AVFoundation.framework */,
 				B0ADC50917D1A0DE001390D4 /* MediaPlayer.framework */,
 				B0ADC4DF17D19701001390D4 /* UIKit.framework */,
@@ -110,6 +126,7 @@
 				B0ADC4EE17D19701001390D4 /* FSAppDelegate.h */,
 				B0ADC4EF17D19701001390D4 /* FSAppDelegate.m */,
 				B0ADC4FC17D19736001390D4 /* ViewControllers */,
+				B0DD641918FAB15E00F041FA /* Images */,
 				B0ADC4E617D19701001390D4 /* Supporting Files */,
 			);
 			path = FiSoMusicPlayer;
@@ -159,6 +176,19 @@
 				B0ADC50617D197CD001390D4 /* FSSettingViewController.xib */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		B0DD641918FAB15E00F041FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B0DD641E18FAB9CC00F041FA /* next@2x.png */,
+				B0DD641F18FAB9CC00F041FA /* play@2x.png */,
+				B0DD642018FAB9CC00F041FA /* previous@2x.png */,
+				B0DD642118FAB9CC00F041FA /* stop@2x.png */,
+				B0DD641A18FAB15E00F041FA /* music@2x.png */,
+				B0DD641B18FAB15E00F041FA /* settings@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +246,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0ADC4EA17D19701001390D4 /* InfoPlist.strings in Resources */,
+				B0DD642418FAB9CC00F041FA /* previous@2x.png in Resources */,
 				B0ADC4F217D19701001390D4 /* Default.png in Resources */,
 				B0ADC4F417D19701001390D4 /* Default@2x.png in Resources */,
+				B0DD642218FAB9CC00F041FA /* next@2x.png in Resources */,
 				B0ADC4F617D19701001390D4 /* Default-568h@2x.png in Resources */,
 				B0ADC50117D1978E001390D4 /* FSMainViewController.xib in Resources */,
+				B0DD641C18FAB15E00F041FA /* music@2x.png in Resources */,
+				B0DD641D18FAB15E00F041FA /* settings@2x.png in Resources */,
+				B0DD642518FAB9CC00F041FA /* stop@2x.png in Resources */,
+				B0DD642318FAB9CC00F041FA /* play@2x.png in Resources */,
 				B0ADC50817D197CD001390D4 /* FSSettingViewController.xib in Resources */,
 				B0B06B3117DC869D00FF8B47 /* FSMediaItemCell.xib in Resources */,
 			);

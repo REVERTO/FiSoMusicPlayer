@@ -8,6 +8,8 @@
 
 #import "FSAppDelegate.h"
 #import "FSMainViewController.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface FSAppDelegate ()
 
@@ -21,6 +23,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // initialization: Google Analytics
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    [GAI sharedInstance].dispatchInterval = 10;
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-37381910-3"];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -28,7 +36,6 @@
     self.mainVC = [[FSMainViewController alloc] initWithNibName:@"FSMainViewController"
                                                                           bundle:nil];
     UINavigationController *naviC = [[UINavigationController alloc] initWithRootViewController:self.mainVC];
-    naviC.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     self.window.rootViewController = naviC;
     
     return YES;

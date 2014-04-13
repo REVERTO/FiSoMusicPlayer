@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface FSSettingViewController : UIViewController
+@class FSMainViewController;
+
+@interface FSSettingViewController : GAITrackedViewController
+
+@property (weak, nonatomic) FSMainViewController *mainVC;
 
 @end

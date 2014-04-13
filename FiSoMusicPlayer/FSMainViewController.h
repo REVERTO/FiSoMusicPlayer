@@ -7,8 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAI.h"
 
-@interface FSMainViewController : UIViewController
+typedef NS_ENUM(NSInteger, FSFilter) {
+    FSFilterRating5,
+    FSFilterLastPlayedDate1Week,
+    FSFilterPlayCount20Over
+};
+
+typedef NS_ENUM(NSInteger, FSSort) {
+    FSSortRatingDsec,
+    FSSortLastPlayedDateDsec,
+    FSSortPlayCountDsec
+};
+
+typedef NS_ENUM(NSInteger, FSLimit) {
+    FSLimit10,
+    FSLimit20,
+    FSLimit30
+};
+
+@interface FSMainViewController : GAITrackedViewController
+
+@property FSFilter filter;
+@property FSSort sort;
+@property FSLimit limit;
 
 - (void)reloadMediaItemList;
 

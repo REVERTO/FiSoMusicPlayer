@@ -42,3 +42,15 @@
 #define COCOAPODS_VERSION_MINOR_BlocksKit_UIKit 2
 #define COCOAPODS_VERSION_PATCH_BlocksKit_UIKit 2
 
+// GoogleAnalytics-iOS-SDK
+#define COCOAPODS_POD_AVAILABLE_GoogleAnalytics_iOS_SDK
+#define COCOAPODS_VERSION_MAJOR_GoogleAnalytics_iOS_SDK 3
+#define COCOAPODS_VERSION_MINOR_GoogleAnalytics_iOS_SDK 0
+#define COCOAPODS_VERSION_PATCH_GoogleAnalytics_iOS_SDK 6
+
+// MMPickerView
+#define COCOAPODS_POD_AVAILABLE_MMPickerView
+#define COCOAPODS_VERSION_MAJOR_MMPickerView 0
+#define COCOAPODS_VERSION_MINOR_MMPickerView 0
+#define COCOAPODS_VERSION_PATCH_MMPickerView 1
+

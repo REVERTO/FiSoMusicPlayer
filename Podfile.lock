@@ -14,11 +14,17 @@ PODS:
   - BlocksKit/UIKit (2.2.2):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - GoogleAnalytics-iOS-SDK (3.0.6)
+  - MMPickerView (0.0.1)
 
 DEPENDENCIES:
   - BlocksKit
+  - GoogleAnalytics-iOS-SDK
+  - MMPickerView
 
 SPEC CHECKSUMS:
   BlocksKit: 125e4e69a62e3b85bacc5175737dae000b00b9fb
+  GoogleAnalytics-iOS-SDK: 16dfcc0c4491148bf372edc85a8470cc405ffb72
+  MMPickerView: 29b43ebf73d4a163700cb3a80982711ce595ce12
 
 COCOAPODS: 0.29.0

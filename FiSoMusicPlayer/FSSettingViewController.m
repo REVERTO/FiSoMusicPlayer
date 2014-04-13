@@ -7,12 +7,13 @@
 //
 
 #import "FSSettingViewController.h"
+#import "MMPickerView.h"
+#import "FSMainViewController.h"
 
 @interface FSSettingViewController ()
-<UITableViewDataSource,UITableViewDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
+<UITableViewDataSource,UITableViewDelegate>
 
 @property IBOutlet UITableView *tableView;
-@property IBOutlet UIPickerView *pickerView;
 
 @property NSArray *settingItems;
 @property NSMutableArray *settingData;
@@ -39,9 +40,12 @@
                      @"10",@"20",@"30"
                      ]}];
         self.settingData = [NSMutableArray array];
-        [self.settingData addObject:self.settingItems[0][@"properties"][0]];
-        [self.settingData addObject:self.settingItems[1][@"properties"][0]];
-        [self.settingData addObject:self.settingItems[2][@"properties"][0]];
+        FSFilter filter = [[NSUserDefaults standardUserDefaults] integerForKey:@"Filter"];
+        [self.settingData addObject:self.settingItems[0][@"properties"][filter]];
+        FSSort sort = [[NSUserDefaults standardUserDefaults] integerForKey:@"Sort"];
+        [self.settingData addObject:self.settingItems[1][@"properties"][sort]];
+        FSLimit limit = [[NSUserDefaults standardUserDefaults] integerForKey:@"Limit"];
+        [self.settingData addObject:self.settingItems[2][@"properties"][limit]];
     }
     return self;
 }
@@ -51,11 +55,12 @@
     [super viewDidLoad];
 
     [self.tableView reloadData];
-    
-    // upper layer offset
-    CGFloat height;
-    height = self.navigationController.navigationBar.frame.size.height;
-    self.tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,height)];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = NSStringFromClass([self class]);
 }
 
 #pragma mark - UITableViewDataSource
@@ -94,34 +99,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.selectedItemIndex = indexPath.section;
-    [self.pickerView reloadAllComponents];
-}
+    NSArray *strings = self.settingItems[indexPath.section][@"properties"];
 
-#pragma mark - UIPickerViewDataSource
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return [_settingItems[self.selectedItemIndex][@"properties"] count];
-}
-
-#pragma mark - UIPickerViewDelegate
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return _settingItems[self.selectedItemIndex][@"properties"][row];
-}
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
-{
-    // change setting data
-    [self.settingData replaceObjectAtIndex:self.selectedItemIndex
-                                withObject:self.settingItems[self.selectedItemIndex][@"properties"][row]];
-    [self.tableView reloadData];
+    [MMPickerView showPickerViewInView:self.view
+                           withStrings:self.settingItems[indexPath.section][@"properties"]
+                           withOptions:@{MMselectedObject:self.settingData[self.selectedItemIndex]}
+                            completion:
+     ^(NSString *selectedString) {
+         // change setting data
+         [self.settingData replaceObjectAtIndex:self.selectedItemIndex
+                                     withObject:selectedString];
+         [[NSUserDefaults standardUserDefaults] setInteger:[strings indexOfObject:selectedString]
+                                                    forKey:self.settingItems[indexPath.section][@"name"]];
+         [self.tableView reloadData];
+     }];
 }
 
 @end
