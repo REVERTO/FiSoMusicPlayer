@@ -30,13 +30,13 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.settingItems =
-        @[ @{@"name":@"Filter",@"properties":@[
-                     @"Rating-5",@"LastPlayedDate-1week",@"PlayCount-20"
+        @[ @{@"item":@"Filter",@"name":NSLocalizedString(@"FILTER",nil),@"properties":@[
+                     NSLocalizedString(@"rating 5", nil),NSLocalizedString(@"last play date 1 week", nil),NSLocalizedString(@"play count over 20", nil)
                      ]},
-           @{@"name":@"Sort",@"properties":@[
-                     @"Rating-Desc",@"LastPlayedDate-Desc",@"PlayCount-Desc"
+           @{@"item":@"Sort",@"name":NSLocalizedString(@"SORT",nil),@"properties":@[
+                     NSLocalizedString(@"rating dsec", nil),NSLocalizedString(@"last play date dsec", nil),NSLocalizedString(@"play count desc", nil)
                      ]},
-           @{@"name":@"Limit",@"properties":@[
+           @{@"item":@"Limit",@"name":NSLocalizedString(@"LIMIT",nil),@"properties":@[
                      @"10",@"20",@"30"
                      ]}];
         self.settingData = [NSMutableArray array];
@@ -110,7 +110,7 @@
          [self.settingData replaceObjectAtIndex:self.selectedItemIndex
                                      withObject:selectedString];
          [[NSUserDefaults standardUserDefaults] setInteger:[strings indexOfObject:selectedString]
-                                                    forKey:self.settingItems[indexPath.section][@"name"]];
+                                                    forKey:self.settingItems[indexPath.section][@"item"]];
          [self.tableView reloadData];
      }];
 }

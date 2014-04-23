@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  FiSoMusicPlayer
+
+  Created by Tomoyuki Ito on 4/23/14.
+  Copyright (c) 2014 REVERTO. All rights reserved.
+*/
+
+"header title" = "Filter & Sort";
+
+// cell display
+"year ago" = "year ago";
+"month ago" = "month ago";
+"day ago" = "day ago";
+"hour ago" = "hour ago";
+"minute ago" = "minute ago";
+"second ago" = "second ago";
+
+// filter setting
+"FILTER" = "FILTER";
+"rating 5" = "rating 5";
+"last play date 1 week" = "last play date 1 week";
+"play count over 20" = "play count over 20";
+
+// sort setting
+"SORT" = "SORT";
+"rating dsec" = "rating dsec";
+"last play date dsec" = "last play date dsec";
+"play count desc" = "play count desc";
+
+// limit setting
+"LIMIT" = "LIMIT";

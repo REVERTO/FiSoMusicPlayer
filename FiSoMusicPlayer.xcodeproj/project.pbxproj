@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0161F2B190567F300CADEBF /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1A190567F200CADEBF /* Icon-120.png */; };
+		B0161F2C190567F300CADEBF /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1B190567F200CADEBF /* Icon-72.png */; };
+		B0161F2D190567F300CADEBF /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1C190567F200CADEBF /* Icon-72@2x.png */; };
+		B0161F2E190567F300CADEBF /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1D190567F200CADEBF /* Icon-76.png */; };
+		B0161F2F190567F300CADEBF /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1E190567F200CADEBF /* Icon-76@2x.png */; };
+		B0161F30190567F300CADEBF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F1F190567F300CADEBF /* Icon-iPad-Spotlight-iOS7@2x.png */; };
+		B0161F31190567F300CADEBF /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F20190567F300CADEBF /* Icon-Small-50.png */; };
+		B0161F32190567F300CADEBF /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F21190567F300CADEBF /* Icon-Small.png */; };
+		B0161F33190567F300CADEBF /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F22190567F300CADEBF /* Icon-Small@2x.png */; };
+		B0161F34190567F300CADEBF /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F23190567F300CADEBF /* Icon-Spotlight-iOS7.png */; };
+		B0161F35190567F300CADEBF /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F24190567F300CADEBF /* Icon-Spotlight-iOS7@2x.png */; };
+		B0161F36190567F300CADEBF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F25190567F300CADEBF /* Icon.png */; };
+		B0161F37190567F300CADEBF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0161F26190567F300CADEBF /* Icon@2x.png */; };
+		B02E709F1907E0AB005C616E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B02E70A11907E0AB005C616E /* Localizable.strings */; };
 		B0ADC4E017D19701001390D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ADC4DF17D19701001390D4 /* UIKit.framework */; };
 		B0ADC4E217D19701001390D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ADC4E117D19701001390D4 /* Foundation.framework */; };
 		B0ADC4E417D19701001390D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0ADC4E317D19701001390D4 /* CoreGraphics.framework */; };
@@ -37,6 +51,22 @@
 /* Begin PBXFileReference section */
 		50EA90E38AC445968297FC60 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFDA4CD15454CD2B663A7C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B0161F1A190567F200CADEBF /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		B0161F1B190567F200CADEBF /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		B0161F1C190567F200CADEBF /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		B0161F1D190567F200CADEBF /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		B0161F1E190567F200CADEBF /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		B0161F1F190567F300CADEBF /* Icon-iPad-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		B0161F20190567F300CADEBF /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		B0161F21190567F300CADEBF /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		B0161F22190567F300CADEBF /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		B0161F23190567F300CADEBF /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
+		B0161F24190567F300CADEBF /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		B0161F25190567F300CADEBF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B0161F26190567F300CADEBF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B02E709C1907D1CF005C616E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B02E70A01907E0AB005C616E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B02E70A21907E0AD005C616E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B0ADC4DC17D19701001390D4 /* FiSoMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiSoMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0ADC4DF17D19701001390D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B0ADC4E117D19701001390D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +118,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0161F19190567F200CADEBF /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B0161F1A190567F200CADEBF /* Icon-120.png */,
+				B0161F1B190567F200CADEBF /* Icon-72.png */,
+				B0161F1C190567F200CADEBF /* Icon-72@2x.png */,
+				B0161F1D190567F200CADEBF /* Icon-76.png */,
+				B0161F1E190567F200CADEBF /* Icon-76@2x.png */,
+				B0161F1F190567F300CADEBF /* Icon-iPad-Spotlight-iOS7@2x.png */,
+				B0161F20190567F300CADEBF /* Icon-Small-50.png */,
+				B0161F21190567F300CADEBF /* Icon-Small.png */,
+				B0161F22190567F300CADEBF /* Icon-Small@2x.png */,
+				B0161F23190567F300CADEBF /* Icon-Spotlight-iOS7.png */,
+				B0161F24190567F300CADEBF /* Icon-Spotlight-iOS7@2x.png */,
+				B0161F25190567F300CADEBF /* Icon.png */,
+				B0161F26190567F300CADEBF /* Icon@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		B0ADC4D317D19701001390D4 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +185,9 @@
 		B0ADC4E617D19701001390D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0161F19190567F200CADEBF /* Icons */,
 				B0ADC4E717D19701001390D4 /* FiSoMusicPlayer-Info.plist */,
+				B02E70A11907E0AB005C616E /* Localizable.strings */,
 				B0ADC4E817D19701001390D4 /* InfoPlist.strings */,
 				B0ADC4EB17D19701001390D4 /* main.m */,
 				B0ADC4ED17D19701001390D4 /* FiSoMusicPlayer-Prefix.pch */,
@@ -229,6 +281,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = B0ADC4D317D19701001390D4;
 			productRefGroup = B0ADC4DD17D19701001390D4 /* Products */;
@@ -245,19 +298,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0161F2B190567F300CADEBF /* Icon-120.png in Resources */,
+				B0161F37190567F300CADEBF /* Icon@2x.png in Resources */,
 				B0ADC4EA17D19701001390D4 /* InfoPlist.strings in Resources */,
+				B0161F36190567F300CADEBF /* Icon.png in Resources */,
+				B02E709F1907E0AB005C616E /* Localizable.strings in Resources */,
+				B0161F35190567F300CADEBF /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				B0DD642418FAB9CC00F041FA /* previous@2x.png in Resources */,
 				B0ADC4F217D19701001390D4 /* Default.png in Resources */,
 				B0ADC4F417D19701001390D4 /* Default@2x.png in Resources */,
 				B0DD642218FAB9CC00F041FA /* next@2x.png in Resources */,
 				B0ADC4F617D19701001390D4 /* Default-568h@2x.png in Resources */,
+				B0161F34190567F300CADEBF /* Icon-Spotlight-iOS7.png in Resources */,
 				B0ADC50117D1978E001390D4 /* FSMainViewController.xib in Resources */,
+				B0161F32190567F300CADEBF /* Icon-Small.png in Resources */,
 				B0DD641C18FAB15E00F041FA /* music@2x.png in Resources */,
 				B0DD641D18FAB15E00F041FA /* settings@2x.png in Resources */,
+				B0161F2F190567F300CADEBF /* Icon-76@2x.png in Resources */,
+				B0161F2D190567F300CADEBF /* Icon-72@2x.png in Resources */,
 				B0DD642518FAB9CC00F041FA /* stop@2x.png in Resources */,
+				B0161F30190567F300CADEBF /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				B0161F2E190567F300CADEBF /* Icon-76.png in Resources */,
+				B0161F2C190567F300CADEBF /* Icon-72.png in Resources */,
 				B0DD642318FAB9CC00F041FA /* play@2x.png in Resources */,
+				B0161F31190567F300CADEBF /* Icon-Small-50.png in Resources */,
 				B0ADC50817D197CD001390D4 /* FSSettingViewController.xib in Resources */,
 				B0B06B3117DC869D00FF8B47 /* FSMediaItemCell.xib in Resources */,
+				B0161F33190567F300CADEBF /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,10 +379,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B02E70A11907E0AB005C616E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B02E70A01907E0AB005C616E /* en */,
+				B02E70A21907E0AD005C616E /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B0ADC4E817D19701001390D4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B0ADC4E917D19701001390D4 /* en */,
+				B02E709C1907D1CF005C616E /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

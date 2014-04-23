@@ -62,6 +62,9 @@ const double kYear = kDay * 365;
     
     _bannerIsVisible = YES;
     
+    self.title = NSLocalizedString(@"header title", nil);
+    NSLog(@"%@",NSLocalizedString(@"title", nil));
+    
     // navigation button
     self.navigationItem.leftBarButtonItem =
     [[UIBarButtonItem alloc] bk_initWithImage:[UIImage imageNamed:@"music"] style:UIBarButtonItemStylePlain handler:
@@ -75,7 +78,7 @@ const double kYear = kDay * 365;
          [self.navigationController pushViewController:self.settingVC animated:YES];
      }];
     
-    self.title = @"Filter & Sort";
+    self.navigationController.navigationBar.tintColor = RGBA(255,100,0,1.0);
     
     // regist original cell
     [self.tableView registerNib:[UINib nibWithNibName:kCellId bundle:nil] forCellReuseIdentifier:kCellId];
@@ -138,17 +141,17 @@ const double kYear = kDay * 365;
     NSDate *lastPlayDate = (NSDate *)[mediaItem valueForProperty:MPMediaItemPropertyLastPlayedDate];
     NSTimeInterval diff = [[NSDate date] timeIntervalSinceDate:lastPlayDate];
     if (diff >= kYear)
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld year ago",(NSInteger)(diff / kYear)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kYear), NSLocalizedString(@"year ago", nil)];
     else if (diff >= kMonth)
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld month ago",(NSInteger)(diff / kMonth)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kMonth), NSLocalizedString(@"month ago", nil)];
     else if (diff >= kDay)
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld day ago",(NSInteger)(diff / kDay)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kDay), NSLocalizedString(@"day ago", nil)];
     else if (diff >= kHour)
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld hour ago",(NSInteger)(diff / kHour)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kHour), NSLocalizedString(@"hour ago", nil)];
     else if (diff >= kMinute)
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld minute ago",(NSInteger)(diff / kMinute)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kMinute), NSLocalizedString(@"minute ago", nil)];
     else
-        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld second ago",(NSInteger)(diff / kSecond)];
+        cell.lastPlayDateLabel.text = [NSString stringWithFormat:@"%ld %@",(NSInteger)(diff / kSecond), NSLocalizedString(@"second ago", nil)];
     
     // image
     MPMediaItemArtwork *artwork = (MPMediaItemArtwork *)[mediaItem valueForProperty:MPMediaItemPropertyArtwork];

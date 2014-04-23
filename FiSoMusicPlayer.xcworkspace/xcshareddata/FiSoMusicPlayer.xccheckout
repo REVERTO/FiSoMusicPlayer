@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F1116505-3DCD-4C62-9F8C-74A70ECF63C9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FiSoMusicPlayer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A6DFE5A6-35B7-40BB-85E3-824420FD114F</key>
+		<string>https://github.com/REVERTO/FiSoMusicPlayer</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FiSoMusicPlayer.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A6DFE5A6-35B7-40BB-85E3-824420FD114F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/REVERTO/FiSoMusicPlayer</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A6DFE5A6-35B7-40BB-85E3-824420FD114F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6DFE5A6-35B7-40BB-85E3-824420FD114F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FiSoMusicPlayer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

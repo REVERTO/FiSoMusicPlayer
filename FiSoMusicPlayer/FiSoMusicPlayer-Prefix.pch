@@ -14,3 +14,5 @@
     #import "BlocksKit.h"
     #import "BlocksKit+UIKit.h"
 #endif
+
+#define RGBA(RED,GREEN,BLUE,ALPHA)  [UIColor colorWithRed:(RED/255.0) green:(GREEN/255.0) blue:(BLUE/255.0) alpha:ALPHA]
