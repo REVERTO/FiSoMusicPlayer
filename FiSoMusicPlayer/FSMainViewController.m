@@ -63,7 +63,7 @@ const double kYear = kDay * 365;
     _bannerIsVisible = YES;
     
     self.title = NSLocalizedString(@"header title", nil);
-    NSLog(@"%@",NSLocalizedString(@"title", nil));
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     // navigation button
     self.navigationItem.leftBarButtonItem =

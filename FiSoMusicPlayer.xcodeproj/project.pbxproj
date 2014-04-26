@@ -473,11 +473,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFDA4CD15454CD2B663A7C7 /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FiSoMusicPlayer/FiSoMusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = "FiSoMusicPlayer/FiSoMusicPlayer-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "518CCC5C-E0CF-4475-8A5C-96B953F8B365";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
